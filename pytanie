@@ -1,0 +1,12 @@
+Polecenie: Przeanalizuj powyższy kod i odpowiedz na pytania:
+
+Za co odpowiada klasa JFileChooser w kontekście tego zadania?
+Dlaczego używamy metody toString() przy pobieraniu wartości z modelu tabeli?
+Co się stanie, jeśli zapomnimy wywołać metodę document.close()?
+
+
+
+
+JFileChooser, to narzędzie do wyboru pliku lub zapisywania pliku przez użytkownika. Umożliwia otwarcie okienka dialogowego „Zapisz jako…” lub „Otwórz”. 
+toString(), ponieważ wartości w modelu tabeli, na przykład DefaultTableModel, mają typ Object. Chcemy je bezpiecznie przekonwertować na String. 
+Brak document.close() sprawi, że plik PDF będzie uszkodzony, niekompletny lub nie otworzy się poprawnie.
